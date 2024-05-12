@@ -1,0 +1,44 @@
+name: Build and test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  paths-ignore:
+    - 'README.md'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        type: [backend, frontend]
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+
+      - name: Install dependencies (frontend)
+        if: ${{ matrix.type == 'frontend' }}
+        run: |
+          npm ci
+          npm run build
+
+      - name: Install dependencies (backend)
+        if: ${{ matrix.type == 'backend' }}
+        run: |
+          dotnet restore
+          dotnet build --configuration Release
+
+      - name: Run tests (backend)
+        if: ${{ matrix.type == 'backend' }}
+        run: |
+          dotnet test --no-build --configuration Release
+
+      - name: Run tests (frontend)
+        if: ${{ matrix.type == 'frontend' }}
+        run: |
+          npm test

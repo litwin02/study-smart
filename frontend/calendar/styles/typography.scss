@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap'); // Regular: 400, Medium: 500
+
+/* TYPOGRAPHY */
+
+@mixin header1 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.2%;
+  font-weight: 500;
+}
+
+@mixin header2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.2%;
+  font-weight: 500;
+}
+
+@mixin header3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+@mixin body1 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+@mixin body2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  font-weight: 400;
+}

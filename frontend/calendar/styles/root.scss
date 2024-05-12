@@ -1,0 +1,93 @@
+@import 'typography';
+
+// gg icons
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/clapper-board.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right-r.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/shopping-bag.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/add-r.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/profile.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/close-r.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/boy.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/trash.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/file.css');
+
+html, body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: (var(--color-font-primary));
+  background-color: (var(--color-background-primary));
+  box-sizing: content-box;
+  @include body1;
+}
+
+:root {
+  --color-font-primary: #CFD6F1;
+  --color-font-secondary: #2A283B;
+  --color-background-primary: #1E1E2D;
+  --color-background-secondary: #181824;
+  --color-accent-primary: #C5A7F2;
+  --color-accent-secondary: #B6BEF9;
+  --color-accent-tertiary: #444255;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background: var(--color-background-secondary);
+  color: var(--color-font-primary);
+  @include body1;
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: var(--color-accent-secondary) 1px solid;
+  }
+
+  th {
+    background: var(--color-accent-secondary);
+    color: var(--color-font-secondary);
+  }
+}
+
+button {
+  all: unset;
+  @include body2;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0);
+  transition: color 0.1s ease-in;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 10px;
+  overflow: hidden;
+  max-height: 42px;
+
+  &:hover {
+    background: var(--color-accent-secondary);
+    color: var(--color-font-secondary);
+  }
+
+  &:active {
+    background: var(--color-accent-primary);
+    color: var(--color-font-secondary);
+  }
+}
+
+.gg {
+  min-width: 22px;
+  min-height: 22px;
+  margin-left: 4px;
+}
+
+.active-app {
+  background: var(--color-accent-tertiary);
+}

@@ -6,5 +6,6 @@
         public int Day { get; set; }
         public int Hour { get; set; }
         public int Availability { get; set; }
+        //hehe test
     }
 }

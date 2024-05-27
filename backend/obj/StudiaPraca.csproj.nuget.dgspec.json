@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emdem\\OneDrive\\Pulpit\\Studia\\Semestr VI\\Projekt Grupowy\\study-smart\\backend\\StudiaPraca.csproj": {}
+    "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\StudiaPraca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emdem\\OneDrive\\Pulpit\\Studia\\Semestr VI\\Projekt Grupowy\\study-smart\\backend\\StudiaPraca.csproj": {
+    "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\StudiaPraca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emdem\\OneDrive\\Pulpit\\Studia\\Semestr VI\\Projekt Grupowy\\study-smart\\backend\\StudiaPraca.csproj",
+        "projectUniqueName": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\StudiaPraca.csproj",
         "projectName": "StudiaPraca",
-        "projectPath": "C:\\Users\\emdem\\OneDrive\\Pulpit\\Studia\\Semestr VI\\Projekt Grupowy\\study-smart\\backend\\StudiaPraca.csproj",
+        "projectPath": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\StudiaPraca.csproj",
         "packagesPath": "C:\\Users\\emdem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emdem\\OneDrive\\Pulpit\\Studia\\Semestr VI\\Projekt Grupowy\\study-smart\\backend\\obj\\",
+        "outputPath": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emdem\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

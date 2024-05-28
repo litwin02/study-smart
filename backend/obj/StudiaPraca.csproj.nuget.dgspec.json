@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\StudiaPraca.csproj": {}
+    "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\StudiaPraca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\StudiaPraca.csproj": {
+    "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\StudiaPraca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\StudiaPraca.csproj",
+        "projectUniqueName": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\StudiaPraca.csproj",
         "projectName": "StudiaPraca",
-        "projectPath": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\StudiaPraca.csproj",
-        "packagesPath": "C:\\Users\\emdem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\obj\\",
+        "projectPath": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\StudiaPraca.csproj",
+        "packagesPath": "C:\\Users\\wfedd\\.nuget\\packages\\",
+        "outputPath": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\emdem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wfedd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +44,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

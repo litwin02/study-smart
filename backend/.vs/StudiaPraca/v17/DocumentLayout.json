@@ -1,58 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\",
+  "WorkspaceRootPath": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|e:\\pobrane\\studia\\projektstudia\\study-smart\\backend\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\lecturersubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\lecturersubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|e:\\pobrane\\studia\\projektstudia\\study-smart\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|e:\\pobrane\\studia\\projektstudia\\study-smart\\backend\\controllers\\chosenhourcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:controllers\\chosenhourcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\planner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\planner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\scheduledevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\scheduledevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\lecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\studentslecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\studentslecture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\preferredhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\preferredhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|c:\\users\\emdem\\onedrive\\dokumenty\\git projects\\study-smart\\backend\\models\\chosenhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:models\\chosenhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|e:\\pobrane\\studia\\projektstudia\\study-smart\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B316C077-69A3-4283-8239-251AF8DB2A4C}|StudiaPraca.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,175 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "StudentsLecture.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\StudentsLecture.cs",
-              "RelativeDocumentMoniker": "Models\\StudentsLecture.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\StudentsLecture.cs",
-              "RelativeToolTip": "Models\\StudentsLecture.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\Contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Contexts\\AppDbContext.cs",
+              "ToolTip": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\Contexts\\AppDbContext.cs",
+              "RelativeToolTip": "Contexts\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:54:37.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Lecture.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Lecture.cs",
-              "RelativeDocumentMoniker": "Models\\Lecture.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Lecture.cs",
-              "RelativeToolTip": "Models\\Lecture.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:54:20.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ScheduledEvent.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\ScheduledEvent.cs",
-              "RelativeDocumentMoniker": "Models\\ScheduledEvent.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\ScheduledEvent.cs",
-              "RelativeToolTip": "Models\\ScheduledEvent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:54:03.741Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Schedule.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Schedule.cs",
-              "RelativeDocumentMoniker": "Models\\Schedule.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Schedule.cs",
-              "RelativeToolTip": "Models\\Schedule.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:53:47.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Room.cs",
-              "RelativeDocumentMoniker": "Models\\Room.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Room.cs",
-              "RelativeToolTip": "Models\\Room.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:53:18.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Subject.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Subject.cs",
-              "RelativeDocumentMoniker": "Models\\Subject.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Subject.cs",
-              "RelativeToolTip": "Models\\Subject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:53:02.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Planner.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Planner.cs",
-              "RelativeDocumentMoniker": "Models\\Planner.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Planner.cs",
-              "RelativeToolTip": "Models\\Planner.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:52:48.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Admin.cs",
-              "RelativeDocumentMoniker": "Models\\Admin.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Admin.cs",
-              "RelativeToolTip": "Models\\Admin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:52:34.982Z",
+              "WhenOpened": "2024-05-27T23:59:29.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LecturerSubject.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\LecturerSubject.cs",
-              "RelativeDocumentMoniker": "Models\\LecturerSubject.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\LecturerSubject.cs",
-              "RelativeToolTip": "Models\\LecturerSubject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:52:22.433Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-27T18:42:00.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Lecturer.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Lecturer.cs",
-              "RelativeDocumentMoniker": "Models\\Lecturer.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Lecturer.cs",
-              "RelativeToolTip": "Models\\Lecturer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABDAAAA",
+              "DocumentIndex": 2,
+              "Title": "ChosenHourController.cs",
+              "DocumentMoniker": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\Controllers\\ChosenHourController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChosenHourController.cs",
+              "ToolTip": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\Controllers\\ChosenHourController.cs",
+              "RelativeToolTip": "Controllers\\ChosenHourController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:52:06.3Z",
+              "WhenOpened": "2024-05-27T23:42:11.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PreferredHour.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\PreferredHour.cs",
-              "RelativeDocumentMoniker": "Models\\PreferredHour.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\PreferredHour.cs",
-              "RelativeToolTip": "Models\\PreferredHour.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\pobrane\\studia\\ProjektStudia\\study-smart\\backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:51:38.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "Models\\Student.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\Student.cs",
-              "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T14:48:41.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ChosenHour.cs",
-              "DocumentMoniker": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\ChosenHour.cs",
-              "RelativeDocumentMoniker": "Models\\ChosenHour.cs",
-              "ToolTip": "C:\\Users\\emdem\\OneDrive\\Dokumenty\\Git Projects\\study-smart\\backend\\Models\\ChosenHour.cs",
-              "RelativeToolTip": "Models\\ChosenHour.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T16:18:11.868Z",
+              "WhenOpened": "2024-05-27T18:41:52.295Z",
               "EditorCaption": ""
             }
           ]

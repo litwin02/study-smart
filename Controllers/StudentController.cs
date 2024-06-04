@@ -9,8 +9,8 @@ using StudiaPraca.Contexts;
 
 namespace StudiaPraca
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
     public class StudentController : ControllerBase
     {
         private readonly AppDbContext _context;
@@ -20,103 +20,91 @@ namespace StudiaPraca
             _context = context;
         }
 
-        // Endpoint for student login
-        [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequest request)
+        // GET: api/Student
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
-            var student = await _context.Students
-                .FirstOrDefaultAsync(s => s.IndexNumber == request.IndexNumber);
-
-            if (student == null)
-            {
-                return NotFound("Student not found");
-            }
-
-            // Normally, you would validate the password here, but for simplicity, we'll skip that step.
-            return Ok(student);
+            return await _context.Students.Include(s => s.PreferredHours)
+                                          .Include(s => s.StudentsLectures)
+                                          .ToListAsync();
         }
 
-
-
-        // Endpoint for setting preferred hours
-        [HttpPost("set-preference")]
-        public async Task<IActionResult> SetPreference([FromBody] PreferredHourRequest request)
+        // GET: api/Student/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Student>> GetStudent(int id)
         {
-            var student = await _context.Students
-                .Include(s => s.PreferredHours)
-                .FirstOrDefaultAsync(s => s.Id == request.StudentId);
+            var student = await _context.Students.Include(s => s.PreferredHours)
+                                                 .Include(s => s.StudentsLectures)
+                                                 .FirstOrDefaultAsync(s => s.Id == id);
 
             if (student == null)
             {
-                return NotFound("Student not found");
+                return NotFound();
             }
 
-            var chosenHour = await _context.ChosenHours
-                .FirstOrDefaultAsync(ch => ch.Id == request.ChosenHourId);
+            return student;
+        }
 
-            if (chosenHour == null)
+        // PUT: api/Student/5
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutStudent(int id, Student student)
+        {
+            if (id != student.Id)
             {
-                return NotFound("Chosen hour not found");
+                return BadRequest();
             }
 
-            var existingPreference = student.PreferredHours
-                .FirstOrDefault(ph => ph.ChosenHourId == request.ChosenHourId);
+            _context.Entry(student).State = EntityState.Modified;
 
-            if (existingPreference != null)
+            try
             {
-                return BadRequest("This hour is already set as preferred");
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!StudentExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
             }
 
-            var preferredHour = new PreferredHour
-            {
-                StudentId = student.Id,
-                ChosenHourId = chosenHour.Id,
-                CreatedAt = DateTime.UtcNow
-            };
+            return NoContent();
+        }
 
-            student.PreferredHours.Add(preferredHour);
+        // POST: api/Student
+        [HttpPost]
+        public async Task<ActionResult<Student>> PostStudent(Student student)
+        {
+            student.CreatedAt = DateTime.SpecifyKind(student.CreatedAt, DateTimeKind.Utc);
+            _context.Students.Add(student);
             await _context.SaveChangesAsync();
 
-            return Ok(preferredHour);
+            return CreatedAtAction("GetStudent", new { id = student.Id }, student);
         }
 
-        // Endpoint for removing preferred hour
-        [HttpDelete("remove-preference/{studentId}/{chosenHourId}")]
-        public async Task<IActionResult> RemovePreference(int studentId, int chosenHourId)
+        // DELETE: api/Student/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteStudent(int id)
         {
-            var student = await _context.Students
-                .Include(s => s.PreferredHours)
-                .FirstOrDefaultAsync(s => s.Id == studentId);
-
+            var student = await _context.Students.FindAsync(id);
             if (student == null)
             {
-                return NotFound("Student not found");
+                return NotFound();
             }
 
-            var preferredHour = student.PreferredHours
-                .FirstOrDefault(ph => ph.ChosenHourId == chosenHourId);
-
-            if (preferredHour == null)
-            {
-                return NotFound("Preferred hour not found");
-            }
-
-            student.PreferredHours.Remove(preferredHour);
+            _context.Students.Remove(student);
             await _context.SaveChangesAsync();
 
-            return Ok("Preferred hour removed");
+            return NoContent();
         }
-    }
 
-    public class LoginRequest
-    {
-        public string IndexNumber { get; set; }
-        // public string Password { get; set; } // Add password if needed
-    }
-
-    public class PreferredHourRequest
-    {
-        public int StudentId { get; set; }
-        public int ChosenHourId { get; set; }
+        private bool StudentExists(int id)
+        {
+            return _context.Students.Any(e => e.Id == id);
+        }
     }
 }

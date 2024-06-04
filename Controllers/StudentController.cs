@@ -5,6 +5,7 @@ using StudiaPraca;
 using StudyCalendar.Server.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using StudiaPraca.Contexts;
 
 namespace StudiaPraca
 {
@@ -12,9 +13,9 @@ namespace StudiaPraca
     [Route("[controller]")]
     public class StudentController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly AppDbContext _context;
 
-        public StudentController(ApplicationDbContext context)
+        public StudentController(AppDbContext context)
         {
             _context = context;
         }
@@ -34,6 +35,8 @@ namespace StudiaPraca
             // Normally, you would validate the password here, but for simplicity, we'll skip that step.
             return Ok(student);
         }
+
+
 
         // Endpoint for setting preferred hours
         [HttpPost("set-preference")]

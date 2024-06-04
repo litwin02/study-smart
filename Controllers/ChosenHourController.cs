@@ -1,76 +1,98 @@
-﻿//using Microsoft.AspNetCore.Cors;
-//using Microsoft.AspNetCore.Mvc;
-//using StudyCalendar.Server.Models;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using StudiaPraca.Contexts;
+using StudyCalendar.Server.Models;
 
-//namespace StudyCalendar.Server.Controllers
-//{
-//    [EnableCors]
-//    [ApiController]
-//    [Route("[controller]")]
-//    public class ChosenHourController : ControllerBase
-//    {
+namespace StudyCalendar.Server.Controllers
+{
+    [EnableCors]
+    [ApiController]
+    [Route("[controller]")]
+    public class ChosenHourController : ControllerBase
+    {
+        private readonly AppDbContext _context;
 
-//        private static IEnumerable<ChosenHour> Hours = new[]
-//        {
-//            new ChosenHour{Id = 1, Day = 1, Hour = 10, Availability = 0},
-//            new ChosenHour{Id = 2, Day = 1, Hour = 11, Availability = 0},
-//            new ChosenHour{Id = 3, Day = 2, Hour = 10, Availability = 0},
-//            new ChosenHour{Id = 4, Day = 2, Hour = 11, Availability = 0},
-//            new ChosenHour{Id = 5, Day = 3, Hour = 10, Availability = 0},
-//            new ChosenHour{Id = 6, Day = 3, Hour = 11, Availability = 0},
-//            new ChosenHour{Id = 7, Day = 4, Hour = 10, Availability = 0},
-//            new ChosenHour{Id = 8, Day = 4, Hour = 11, Availability = 0},
-//            new ChosenHour{Id = 9, Day = 5, Hour = 10, Availability = 0},
-//            new ChosenHour{Id = 10, Day = 5, Hour = 11, Availability = 0}
-//        };
+        public ChosenHourController(AppDbContext context)
+        {
+            _context = context;
+        }
 
-//        [HttpGet("{id:int}")]
-//        public ChosenHour[] Get(int id)
-//        {
-//            ChosenHour[] hours = Hours.Where(i => i.Id == id).ToArray();
-//            return hours;
-//        }
+        // Metoda GET zwracająca wybrane godziny dla danego studenta
+        [HttpGet("student/{studentId:int}")]
+        public async Task<ActionResult<IEnumerable<ChosenHour>>> GetChosenHoursByStudent(int studentId)
+        {
+            var preferredHours = await _context.PreferredHours
+                .Where(ph => ph.StudentId == studentId)
+                .Select(ph => ph.ChosenHour)
+                .ToListAsync();
 
-//        [HttpGet]
-//        public IEnumerable<ChosenHour> Index()
-//        {
-//            ChosenHour[] hours = Hours.ToArray();
-//            return hours;
-//        }
+            if (preferredHours == null || !preferredHours.Any())
+            {
+                return NotFound();
+            }
 
-//        [HttpPut("add")]
-//        public IActionResult Add([FromBody] Dictionary<string, int> requestData)
-//        {
-//            if (requestData.ContainsKey("day") && requestData.ContainsKey("hour"))
-//            {
-//                int day = requestData["day"];
-//                int hour = requestData["hour"];
+            return Ok(preferredHours);
+        }
 
-//                var hourToUpdate = Hours.FirstOrDefault(h => h.Day == day && h.Hour == hour);
-//                if (hourToUpdate != null)
-//                {
-//                    hourToUpdate.Availability++;
-//                    return Ok(hourToUpdate);
-//                }
-//            }
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<ChosenHour>> GetChosenHour(int id)
+        {
+            var chosenHour = await _context.ChosenHours.FindAsync(id);
+            if (chosenHour == null)
+            {
+                return NotFound();
+            }
+            return chosenHour;
+        }
 
-//            return BadRequest("Invalid data provided.");
-//        }
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<ChosenHour>>> GetChosenHours()
+        {
+            return await _context.ChosenHours.ToListAsync();
+        }
 
-//        [HttpPut("remove")]
-//        public IActionResult Remove([FromBody] ChosenHour updatedHour)
-//        {
-//            var hourToUpdate = Hours.FirstOrDefault(h => h.Day == updatedHour.Day && h.Hour == updatedHour.Hour);
-//            if (hourToUpdate != null)
-//            {
-//                if (hourToUpdate.Availability == 0) return BadRequest();
-//                hourToUpdate.Availability--;
-//                return Ok(hourToUpdate);
-//            }
-//            else
-//            {
-//                return BadRequest();
-//            }
-//        }
-//    }
-//}
+        [HttpPut("add")]
+        public async Task<IActionResult> AddChosenHour([FromBody] Dictionary<string, int> requestData)
+        {
+            if (requestData.ContainsKey("day") && requestData.ContainsKey("hour"))
+            {
+                int day = requestData["day"];
+                int hour = requestData["hour"];
+
+                var chosenHour = await _context.ChosenHours
+                    .FirstOrDefaultAsync(h => h.Day == day && h.Hour.Hour == hour);
+
+                if (chosenHour != null)
+                {
+                    chosenHour.Availability++;
+                    await _context.SaveChangesAsync();
+                    return Ok(chosenHour);
+                }
+            }
+
+            return BadRequest("Invalid data provided.");
+        }
+
+        [HttpPut("remove")]
+        public async Task<IActionResult> RemoveChosenHour([FromBody] ChosenHour updatedHour)
+        {
+            var chosenHour = await _context.ChosenHours
+                .FirstOrDefaultAsync(h => h.Day == updatedHour.Day && h.Hour.Hour == updatedHour.Hour);
+
+            if (chosenHour != null)
+            {
+                if (chosenHour.Availability == 0)
+                {
+                    return BadRequest();
+                }
+
+                chosenHour.Availability--;
+                await _context.SaveChangesAsync();
+                return Ok(chosenHour);
+            }
+
+            return BadRequest();
+        }
+    }
+}

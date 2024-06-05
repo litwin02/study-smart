@@ -1,26 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudiaPraca.Models;
-using StudiaPraca;
-using StudyCalendar.Server.Models;
-using System.Linq;
-using System.Threading.Tasks;
 using StudiaPraca.Contexts;
 
 namespace StudiaPraca
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StudentController : ControllerBase
+    public class StudentsController : ControllerBase
     {
         private readonly AppDbContext _context;
 
-        public StudentController(AppDbContext context)
+        public StudentsController(AppDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Student
+        // GET: api/students
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
@@ -29,7 +25,7 @@ namespace StudiaPraca
                                           .ToListAsync();
         }
 
-        // GET: api/Student/5
+        // GET: api/student/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Student>> GetStudent(int id)
         {
@@ -45,7 +41,7 @@ namespace StudiaPraca
             return student;
         }
 
-        // PUT: api/Student/5
+        // PUT: api/students/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutStudent(int id, Student student)
         {
@@ -75,7 +71,7 @@ namespace StudiaPraca
             return NoContent();
         }
 
-        // POST: api/Student
+        // POST: api/students
         [HttpPost]
         public async Task<ActionResult<Student>> PostStudent(Student student)
         {
@@ -86,7 +82,7 @@ namespace StudiaPraca
             return CreatedAtAction("GetStudent", new { id = student.Id }, student);
         }
 
-        // DELETE: api/Student/5
+        // DELETE: api/students/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteStudent(int id)
         {
